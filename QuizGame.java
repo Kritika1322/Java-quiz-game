@@ -28,34 +28,35 @@ public class QuizGame{
         System.out.println("Hello, " + playername +"! Let's get started!");
 
         String [] questions = {
-        "What is the capital of France?",
-        "What is 8x7?",
-        "What is the largest planet in our solar system?",
-        "Who wrote 'Romeo and Juliet'?",
-        "What is the chemical symbol for water?", 
-        "What is the tallest mountain in the world?",
-        "Who painted the Mona Lisa?",
-        "What is the smallest prime number?",
-        "What is the currency of Japan?",
-        "Who is the current president of the United States?"
+            "What is the capital of France?",
+            "What is 8x7?",
+            "What is the largest planet in our solar system?",
+            "Who wrote 'Romeo and Juliet'?",
+            "What is the chemical symbol for water?", 
+            "What is the tallest mountain in the world?",
+            "Who painted the Mona Lisa?",
+            "What is the smallest prime number?",
+            "What is the currency of Japan?",
+            "Who is the current president of the United States?"
         };
 
         String [] options = {
-        "A) Paris  B) London  C) Berlin  D) Madrid",
-        "A) 54  B) 56  C) 64  D) 72",
-        "A) Earth  B) Jupiter  C) Saturn  D) Mars",
-        "A) William Shakespeare  B) Charles Dickens  C) Mark Twain  D) Jane Austen",
-        "A) H2O  B) CO2  C) O2  D) NaCl",
-        "A) Mount Everest  B) K2  C) Kangchenjunga  D) Lhotse",
-        "A) Leonardo da Vinci  B) Vincent van Gogh  C) Pablo Picasso  D) Michelangelo",
-        "A) 0  B) 1  C) 2  D) 3",
-        "A) Yen  B) Dollar  C) Euro  D) Pound",
-        "A) Joe Biden  B) Donald Trump  C) Barack Obama  D) George Bush"
+            "A) Paris  B) London  C) Berlin  D) Madrid",
+            "A) 54  B) 56  C) 64  D) 72",
+            "A) Earth  B) Jupiter  C) Saturn  D) Mars",
+            "A) William Shakespeare  B) Charles Dickens  C) Mark Twain  D) Jane Austen",
+            "A) H2O  B) CO2  C) O2  D) NaCl",
+            "A) Mount Everest  B) K2  C) Kangchenjunga  D) Lhotse",
+            "A) Leonardo da Vinci  B) Vincent van Gogh  C) Pablo Picasso  D) Michelangelo",
+            "A) 0  B) 1  C) 2  D) 3",
+            "A) Yen  B) Dollar  C) Euro  D) Pound",
+            "A) Joe Biden  B) Donald Trump  C) Barack Obama  D) George Bush"
         };
 
         String[] answers = {"A", "B", "B", "A", "A", "A", "A", "C", "A", "B"};
 
         int score = 0;
+        
         for (int i=0; i<questions.length; i++){
             System.out.println("Question " + (i+1) + " of " + questions.length + ": ");
             System.out.println(questions[i]);
@@ -71,6 +72,7 @@ public class QuizGame{
                 System.out.println("Wrong! The correct answer is: " + answers[i]);
             }
         }
+        
         System.out.println("========================================");
         System.out.println("Quiz Over! Your final score is: " + score + " out of " + questions.length);
         System.out.println("Grade: " + getGrade(score));
